@@ -2,12 +2,15 @@ $bbgcolor: brown;
 $boxbgcolor: #211e1e;
 $fontcolor: snow;
 
-
-body {
+@mixin flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  @include flex;
+  flex-direction: column;
 
   background: $bbgcolor;
   color: $fontcolor;
@@ -16,6 +19,10 @@ body {
 }
 
 main {
+  @include flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   background: $boxbgcolor;
   max-width: 90ch;
   .description {
@@ -30,6 +37,7 @@ nav {
   ul {
     display: flex;
     list-style: none;
+    margin-right: 2rem;
   }
   li {
     margin-right: .5rem;
