@@ -8,6 +8,10 @@ $fontcolor: snow;
   align-items: center;
 }
 
+@mixin size {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
 body {
   @include flex;
   flex-direction: column;
@@ -16,6 +20,8 @@ body {
   color: $fontcolor;
 
   margin: 0;
+
+  @include size;
 }
 
 main {
@@ -30,6 +36,7 @@ main {
   }
   button {
     margin: .5rem;
+    @include size;
   }
 }
 
