@@ -1,5 +1,8 @@
+// The all important!
 'use strict';
 
+
+// The random event array! full of good and bad surprises for our players. Surely there will be more to add!
 const randEvent = [
   {
     name: "bear",
@@ -17,5 +20,14 @@ const randEvent = [
   }
 ];
 
+// Lets see if it works.
+// console.log(randEvent[0].info);
+// And it does!
 
-document.querySelector('description').innerHTML = `${randEvent.info}`;
+// Now attempting to get the phrases to output to the HTML, however it seems to always trigger the function, rather than on event.
+
+// document.querySelector('.randEvent').addEventListener('click', encounter());
+
+// function encounter() {
+//   document.querySelector('.description').innerHTML = `${randEvent[0].info}`;
+// };
