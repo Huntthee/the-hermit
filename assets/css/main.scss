@@ -1,0 +1,37 @@
+$bbgcolor: brown;
+$boxbgcolor: #211e1e;
+$fontcolor: snow;
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: $bbgcolor;
+  color: $fontcolor;
+
+  margin: 0;
+}
+
+main {
+  background: $boxbgcolor;
+  max-width: 90ch;
+  .description {
+    padding: 1rem;
+  }
+  button {
+    margin: .5rem;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  li {
+    margin-right: .5rem;
+  }
+}
