@@ -22,17 +22,13 @@ const randEvent = [
   {
     name: "opossum",
     info: "The bushes rustle! Suddenly, an opossum scuttles by in front of you, before quickly disappearing back into the bush."
+  },
+
+  {
+    name: "The Hermit",
+    info: "You come across a lone cottage, a wisp of smoke escaping the stone chimney. At the door stands a gnarled old man, living alone in the woods. He invites you inside to rest and perhaps help you find your way home."
   }
 ];
 
-// Lets see if it works.
-// console.log(randEvent[0].info);
-// And it does!
-
-// Now attempting to get the phrases to output to the HTML, however it seems to always trigger the function, rather than on event.
-
-// document.querySelector('.randEvent').addEventListener('click', encounter());
-
-// function encounter() {
-//   document.querySelector('.description').innerHTML = `${randEvent[0].info}`;
-// };
+// Okay! got the random descriptions to show up, just need to split it out to fire on button click instead of page refresh!
+document.querySelector('.description').innerHTML = `${randEvent[Math.floor(Math.random() * randEvent.length)].info}`;
