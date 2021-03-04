@@ -16,7 +16,12 @@ const randEvent = [
 
   {
     name: "clearing",
-    info: ""
+    info: "Working your way through the trees, you see a break of light, and step out into a large meadow. Tall wild grasses and flowering plants sway in the breeze."
+  },
+
+  {
+    name: "opossum",
+    info: "The bushes rustle! Suddenly, an opossum scuttles by in front of you, before quickly disappearing back into the bush."
   }
 ];
 
