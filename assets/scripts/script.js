@@ -31,4 +31,14 @@ const randEvent = [
 ];
 
 // Okay! got the random descriptions to show up, just need to split it out to fire on button click instead of page refresh!
-document.querySelector('.description').innerHTML = `${randEvent[Math.floor(Math.random() * randEvent.length)].info}`;
+const button = document.querySelector('.randEvent');
+const message = `${randEvent[Math.floor(Math.random() * randEvent.length)].info}`;
+
+button.addEventListener('click', shuffle());
+
+function shuffle(){
+  document.querySelector('.description').innerHTML = message;
+};
+
+// Many ways to set this up, all so far are triggering random message on page refresh instead of button click....
+
